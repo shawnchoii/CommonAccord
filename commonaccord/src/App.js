@@ -8,14 +8,17 @@ import {
   Button,
   TextField,
 } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 import Header from './components/Header';
+import BusinessCenterRoundedIcon from '@material-ui/icons/BusinessCenterRounded';
 
 function App() {
+  const classes = useStyles();
+
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Container>
         <p>
           Bringing the World to Agreement
         </p>
@@ -25,11 +28,51 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Compare with commonaccord.org
         </a>
-      </header>
+      </Container>
+      <Grid container className={classes.users}>
+        <Typography variant='h4'>Streamlined Document Creation</Typography>
+        <Grid container className={classes.grid} spacing={4}>
+          <Grid item xs={3}>
+            <BusinessCenterRoundedIcon color='primary' />
+          </Grid>
+          <Grid item xs={3}>
+            <BusinessCenterRoundedIcon color='primary' />
+          </Grid>
+          <Grid item xs={3}>
+            <BusinessCenterRoundedIcon color='primary' />
+          </Grid>
+        </Grid>
+      </Grid>
     </div>
   );
 }
+
+const useStyles = makeStyles({
+  users: {
+    flexDirection: 'column',
+    marginTop: 25,
+  },
+  grid: {
+    marginTop: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  navbarDisplayFlex: {
+    display: `flex`,
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  },
+  navDisplayFlex: {
+    display: `flex`,
+    justifyContent: `space-evenly`
+  },
+  linkText: {
+    textDecoration: `none`,
+    textTransform: `uppercase`,
+    color: `black`
+  }
+});
 
 export default App;

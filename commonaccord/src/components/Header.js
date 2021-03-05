@@ -6,6 +6,7 @@ import {
     List,
     ListItem,
     ListItemText,
+    Divider,
     Container } from '@material-ui/core';
 import { Home } from "@material-ui/icons";
 import { makeStyles } from '@material-ui/core/styles';
@@ -23,7 +24,7 @@ const Header = () => {
     const classes = useStyles();
   
     return (
-      <AppBar position="static">
+      <AppBar elevation={0} position="static" color = "transparent" className={classes.appbar}>
         <Toolbar>
           <Container maxWidth="xl" className={classes.navbarDisplayFlex}>
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
@@ -48,6 +49,9 @@ const Header = () => {
   };
 
 const useStyles = makeStyles({
+    appbar: {
+      borderBottom: "3px solid rgb(212, 212, 212)"
+    },
     navbarDisplayFlex: {
       display: `flex`,
       alignItems: 'center',
@@ -60,7 +64,7 @@ const useStyles = makeStyles({
     linkText: {
       textDecoration: `none`,
       textTransform: `uppercase`,
-      color: `white`
+      color: `black`
     }
   });
 
