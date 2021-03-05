@@ -1,4 +1,3 @@
-import logo from './logo.png';
 import './App.css';
 import {
   Typography,
@@ -11,6 +10,16 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import Header from './components/Header';
 import BusinessCenterRoundedIcon from '@material-ui/icons/BusinessCenterRounded';
+import EmojiObjectsRoundedIcon from '@material-ui/icons/EmojiObjectsRounded';
+import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
+import Row from 'react-bootstrap/Row';
+import Image from 'react-bootstrap/Image';
+import Col from 'react-bootstrap/Col';
+import MIT_image from "./images/MIT_image.png";
+import Caisse_des_img from "./images/Caisse_des_img.png";
+import labchain_logo from "./images/labchain_logo.png";
+import world_commerce from "./images/world_commerce.png";
+
 
 function App() {
   const classes = useStyles();
@@ -18,32 +27,87 @@ function App() {
   return (
     <div className="App">
       <Header />
+      
       <Container>
-        <p>
-          Bringing the World to Agreement
-        </p>
-        <a
-          className="App-link"
-          href="http://www.commonaccord.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Compare with commonaccord.org
-        </a>
+        <Typography className={classes.text1}>Codifying and automating legal documents</Typography>
+        <Typography className={classes.text2}>
+          CommonAccord is an initiative to create global codes of legal 
+          transacting by codifying and automating legal documents, including contracts, permits, organizational 
+          documents, and consents. We anticipate that there will be codes for each jurisdiction, in each language. 
+          For international dealings and coordination, there will be at least one "global" code. 
+        </Typography>
+        
       </Container>
+      <Grid container className={classes.grid} spacing={4}>
+        
+          <Grid item xs={2}>
+            <Button variant='outlined' color='primary' size='small' className={classes.button2} href="http://www.commonaccord.org/">Contact Us</Button>
+          </Grid>
+          <Grid item xs={2}>
+            <Button variant='outlined' color='primary' size='small' className={classes.button2} href="https://github.com/CommonAccord">GitHub</Button>
+          </Grid>
+        </Grid>
       <Grid container className={classes.users}>
         <Typography variant='h4'>Streamlined Document Creation</Typography>
         <Grid container className={classes.grid} spacing={4}>
           <Grid item xs={3}>
             <BusinessCenterRoundedIcon color='primary' />
+            <Typography variant='h5'>Corporations</Typography>
+            <Typography>Explore legal documents most common for coporate use</Typography>
           </Grid>
           <Grid item xs={3}>
-            <BusinessCenterRoundedIcon color='primary' />
+            <EmojiObjectsRoundedIcon color='primary' />
+            <Typography variant='h5'>Univiersities</Typography>
+            <Typography>Explore legal documents for universities to dislcose valuable research </Typography>
           </Grid>
           <Grid item xs={3}>
-            <BusinessCenterRoundedIcon color='primary' />
+            <AccountCircleRoundedIcon color='primary' />
+            <Typography variant='h5'>Individuals</Typography>
+            <Typography>Explore legal documents used by other individuals</Typography>
           </Grid>
         </Grid>
+        <Grid container className={classes.grid} spacing={4}>
+          <Grid item xs={3}>
+            <Button variant='outlined' color='primary' className={classes.button1} href="http://www.commonaccord.org/index.php?action=list&file=">Discover</Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button variant='outlined' color='primary' className={classes.button1}>Discover</Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button variant='outlined' color='primary' className={classes.button1}>Discover</Button>
+          </Grid>
+        </Grid>
+      </Grid>
+      {/* <Container>
+        <Row className={classes.flex}>
+          <Col className={classes.rowFlex}>
+            <Image fluid className={classes.image} src={MIT_image}/>
+          </Col>
+          <Col className={classes.rowFlex}>
+            <Image  fluid className={classes.image} src={Caisse_des_img}/>
+          </Col>
+          <Col className={classes.rowFlex}>
+            <Image fluid className={classes.image} src={labchain_logo} />
+          </Col>
+          <Col className={classes.rowFlex}>
+            <Image fluid className={classes.image} src={world_commerce} />
+          </Col>
+        </Row>
+      </Container> */}
+
+      <Grid container className={classes.flex} >   
+          <Grid item xs={3}>
+            <Image fluid className={classes.image} src={MIT_image}/>
+          </Grid>
+          <Grid item xs={3}>
+            <Image  fluid className={classes.image} src={Caisse_des_img}/>
+          </Grid>
+          <Grid item xs={3}>
+            <Image fluid className={classes.image} src={labchain_logo} />
+          </Grid>
+            <Grid item xs={3}>
+          <Image fluid className={classes.image} src={world_commerce} />
+      </Grid>
       </Grid>
     </div>
   );
@@ -57,7 +121,7 @@ const useStyles = makeStyles({
   grid: {
     marginTop: 10,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: "top"
   },
   navbarDisplayFlex: {
     display: `flex`,
@@ -72,7 +136,39 @@ const useStyles = makeStyles({
     textDecoration: `none`,
     textTransform: `uppercase`,
     color: `black`
+  },
+  button1: {
+    fontWeight: 'bold',
+    marginTop: 30,
+  },
+  button2: {
+    fontWeight: 'bold',
+    marginTop: 15,
+    marginBottom: 10,
+  },
+  text1: {
+    fontSize: 30,
+    marginTop: 25,
+  },
+  text2: {
+    fontSize: 20,
+    color: 'grey',
+  },
+  image: {
+    
+    width: "50%",
+    height: "30"
+  },
+  rowFlex: {
+    flexDirection: 'row',
+  },
+  flex: {
+    marginTop: 10,
+    justifyContent: 'center',
+    alignItems: "top",
+    marginTop: 50,
   }
+
 });
 
 export default App;

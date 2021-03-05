@@ -10,7 +10,7 @@ import {
     Container } from '@material-ui/core';
 import { Home } from "@material-ui/icons";
 import { makeStyles } from '@material-ui/core/styles';
-import logo from '../logo.png';
+import logo from '../images/logo.png';
 
 const navLinks = [
   { title: `about us`, path: `/about-us` },
