@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/CommonAccord/static/css/main.a875d519.chunk.css",
-    "main.js": "/CommonAccord/static/js/main.917d6d00.chunk.js",
-    "main.js.map": "/CommonAccord/static/js/main.917d6d00.chunk.js.map",
-    "runtime-main.js": "/CommonAccord/static/js/runtime-main.521f80e0.js",
-    "runtime-main.js.map": "/CommonAccord/static/js/runtime-main.521f80e0.js.map",
-    "static/js/2.db7f9977.chunk.js": "/CommonAccord/static/js/2.db7f9977.chunk.js",
-    "static/js/2.db7f9977.chunk.js.map": "/CommonAccord/static/js/2.db7f9977.chunk.js.map",
-    "static/js/3.fa04aac7.chunk.js": "/CommonAccord/static/js/3.fa04aac7.chunk.js",
-    "static/js/3.fa04aac7.chunk.js.map": "/CommonAccord/static/js/3.fa04aac7.chunk.js.map",
+    "main.js": "/CommonAccord/static/js/main.1a9643e6.chunk.js",
+    "main.js.map": "/CommonAccord/static/js/main.1a9643e6.chunk.js.map",
+    "runtime-main.js": "/CommonAccord/static/js/runtime-main.9cb94a7a.js",
+    "runtime-main.js.map": "/CommonAccord/static/js/runtime-main.9cb94a7a.js.map",
+    "static/js/2.c47924f0.chunk.js": "/CommonAccord/static/js/2.c47924f0.chunk.js",
+    "static/js/2.c47924f0.chunk.js.map": "/CommonAccord/static/js/2.c47924f0.chunk.js.map",
+    "static/js/3.68914bb5.chunk.js": "/CommonAccord/static/js/3.68914bb5.chunk.js",
+    "static/js/3.68914bb5.chunk.js.map": "/CommonAccord/static/js/3.68914bb5.chunk.js.map",
     "index.html": "/CommonAccord/index.html",
     "static/css/main.a875d519.chunk.css.map": "/CommonAccord/static/css/main.a875d519.chunk.css.map",
-    "static/js/2.db7f9977.chunk.js.LICENSE.txt": "/CommonAccord/static/js/2.db7f9977.chunk.js.LICENSE.txt",
+    "static/js/2.c47924f0.chunk.js.LICENSE.txt": "/CommonAccord/static/js/2.c47924f0.chunk.js.LICENSE.txt",
     "static/media/Caisse_des_img.9d30af00.png": "/CommonAccord/static/media/Caisse_des_img.9d30af00.png",
     "static/media/MIT_image.87844e4d.png": "/CommonAccord/static/media/MIT_image.87844e4d.png",
     "static/media/labchain_logo.9bdaf1cc.png": "/CommonAccord/static/media/labchain_logo.9bdaf1cc.png",
@@ -19,9 +19,9 @@
     "static/media/world_commerce.c8b022da.png": "/CommonAccord/static/media/world_commerce.c8b022da.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.521f80e0.js",
-    "static/js/2.db7f9977.chunk.js",
+    "static/js/runtime-main.9cb94a7a.js",
+    "static/js/2.c47924f0.chunk.js",
     "static/css/main.a875d519.chunk.css",
-    "static/js/main.917d6d00.chunk.js"
+    "static/js/main.1a9643e6.chunk.js"
   ]
 }
